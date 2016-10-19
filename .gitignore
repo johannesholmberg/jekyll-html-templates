@@ -1,0 +1,17 @@
+# Compiled source #
+###################
+_site
+source/assets/css/*.css
+source/assets/js/*.js
+
+# Packages #
+############
+node_modules
+source/assets/vendor/**/*
+
+# Logs #
+########
+**/*.jekyll-metadata
+**/*.DS_Store
+Gemfile.lock
+npm-debug.log
