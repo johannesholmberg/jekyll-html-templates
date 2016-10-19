@@ -1,8 +1,9 @@
-var gulp = require('gulp'),
-    svgstore = require('gulp-svgstore'),
-    svgmin = require('gulp-svgmin'),
-    cheerio = require('gulp-cheerio'),
-    minimist = require('minimist');
+var gulp        = require('gulp'),
+    browserSync = require('browser-sync'),
+    svgstore    = require('gulp-svgstore'),
+    svgmin      = require('gulp-svgmin'),
+    cheerio     = require('gulp-cheerio'),
+    minimist    = require('minimist');
 
 gulp.task("svg", function () {
   return gulp

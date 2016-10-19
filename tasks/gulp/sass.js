@@ -1,11 +1,11 @@
-var gulp = require('gulp'),
-    browserSync = require('browser-sync'),
-    notify = require('gulp-notify'),
-    sass = require('gulp-sass'),
-    autoprefixer = require('gulp-autoprefixer'),
-    cleanCSS = require('gulp-clean-css'),
-    plumber = require('gulp-plumber'),
-    rename = require('gulp-rename');
+var gulp          = require('gulp'),
+    browserSync   = require('browser-sync'),
+    notify        = require('gulp-notify'),
+    sass          = require('gulp-sass'),
+    autoprefixer  = require('gulp-autoprefixer'),
+    cleanCSS      = require('gulp-clean-css'),
+    plumber       = require('gulp-plumber'),
+    rename        = require('gulp-rename');
 
 /**
  * Compile files from assets/css/source into both _site/css (for live injecting) and source (for future jekyll builds)
