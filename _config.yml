@@ -1,0 +1,32 @@
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+name: Name of the site
+author: Author
+
+
+# ----------------------- #
+#   Global media queries  #
+# ----------------------- #
+
+mobile-lg:   'min-width: 34em'
+tablet-sm:   'min-width: 45em'
+tablet-lg:   'min-width: 57em'
+desktop-sm:  'min-width: 67em'
+desktop-lg:  'min-width: 84em'
+desktop-xl:  'min-width: 118em'
+
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
+source: source
+destination: _site
+permalink: :title.html
+
+exclude: [
+  "assets/css/source",
+  "assets/js/source",
+  "assets/icons"
+]
