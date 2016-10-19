@@ -1,0 +1,15 @@
+.wrap {
+  @extend %clearfix;
+  margin: 0 auto;
+  max-width: 75em;
+  position: relative;
+  padding: 0 1em;
+
+  @include breakpoint(tablet-sm) {
+    padding: 0 2em;
+  }
+}
+
+main {
+  
+}

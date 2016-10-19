@@ -1,0 +1,32 @@
+html {
+  color: $darkgray;
+  line-height: 1.65;
+  font-size: 1em;
+}
+
+body {
+  background: #fff;
+  font-family: $font-sans;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav ul {
+  padding: 0;
+}
+
+audio, canvas, img, svg, video {
+  vertical-align: middle;
+}
+
+img, video, object, svg, iframe {
+  max-width: 100%;
+  border: none;
+}
+
+iframe {
+  border: 0;
+  width: 100%;
+}

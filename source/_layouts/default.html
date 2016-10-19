@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+  {% include head.html %}
+  <body>
+
+    <div style="height: 0; width: 0; position: absolute; visibility: hidden">
+      {% include icons.svg %}
+    </div>
+
+    {% include header.html %}
+    <main>{{ content }}</main>
+    {% include footer.html %}
+
+  </body>
+</html>
