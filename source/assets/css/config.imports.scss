@@ -1,0 +1,84 @@
+/*-------------------------------*\
+  # CONFIG
+\*-------------------------------*/
+
+/**
+ * SETTINGS
+ * Global...............Globally available settings.
+ * Colors...............Globally defined colors.
+ *
+ * TOOLS
+ * Mixins...............Global mixins.
+ * Breakpoints..........Global breakpoints.
+ * Helpers..............Globally available helper classes.
+ *
+ * GENERIC
+ * Normalize.css........Normalize the browser defaults.
+ * Reset................Reset some needed styles.
+ * Box-sizing...........A better box-model.
+ * Fonts................Defining the fonts being used.
+ * Icons................Main styling for SVG icons.
+ * Selections...........Styles for selecting elements.
+ * Print................Resetting the print format.
+ *
+ * ELEMENTS
+ * General..............Common HTML elements.
+ * Headings.............H1–H6.
+ * Links................Styling all a elements.
+ * Code.................Styling all code elements.
+ * Lists................Styling of ul and ol.
+ * Quotes...............Base styling for quotes.
+ * Tables...............Base styling for tables.
+ * Forms................Element-level form styling.
+ * Figures..............Base styling of figures.
+ *
+ * OBJECTS
+ * Main Layout..........File for main layout handling.
+ * Main Content.........Handling content layout.
+ *
+ * COMPONENTS
+ *
+ * ...All components listed below...
+ *
+ * TRUMPS
+ * Display..............Helper classes for showing or hiding content.
+ * Utilities............Various helper classes.
+ * Vendor extensions....Overwrite 3rd party styles
+ *
+ */
+
+@import "settings.global";
+@import "settings.colors";
+
+@import "tools.mixins";
+@import "tools.breakpoints";
+@import "tools.helpers";
+
+@import "../vendor/normalize-scss/sass/normalize/import-now";
+@import "generic.reset";
+@import "generic.box-sizing";
+@import "generic.fonts";
+@import "generic.icons";
+@import "generic.selections";
+@import "generic.print";
+
+@import "elements.general";
+@import "elements.headings";
+@import "elements.links";
+@import "elements.code";
+@import "elements.lists";
+@import "elements.quotes";
+@import "elements.tables";
+@import "elements.forms";
+@import "elements.figures";
+
+@import "objects.main-layout";
+@import "objects.main-content";
+
+@import "components.nav-primary";
+@import "components.site-footer";
+@import "components.site-header";
+
+@import "trumps.display";
+@import "trumps.utilities";
+@import "trumps.vendor-extensions";

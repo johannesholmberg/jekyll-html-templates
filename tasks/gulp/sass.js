@@ -20,7 +20,7 @@ gulp.task('sass', function() {
     this.emit('end');
   };
 
-  gulp.src('source/assets/css/source/config.imports.scss')
+  gulp.src('source/assets/css/config.imports.scss')
     .pipe(plumber({errorHandler: onError}))
     .pipe(sass({
       style: 'expanded',
