@@ -5,7 +5,7 @@ var gulp = require('gulp');
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function() {
-  gulp.watch('source/assets/css/source/**/*.scss', ['sass']);
+  gulp.watch('source/assets/css/*.scss', ['sass']);
   gulp.watch('source/assets/js/source/**/*.js', ['scripts']);
   gulp.watch('source/assets/icons/*.svg', ['svg']);
   gulp.watch(['**/*.html','**/*.md'], ['jekyll-rebuild']);
