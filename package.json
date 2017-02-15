@@ -17,6 +17,8 @@
     "gulp-svgmin": "^1.2.0",
     "gulp-svgstore": "^6.0.0",
     "require-dir": "^0.3.1",
-    "gulp-plumber": "^1.1.0"
+    "gulp-plumber": "^1.1.0",
+    "babel-preset-env": "^1.1.8",
+    "gulp-babel": "^6.1.2"
   }
 }
