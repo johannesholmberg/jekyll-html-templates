@@ -1,84 +1,44 @@
-/*-------------------------------*\
-  # CONFIG
-\*-------------------------------*/
+// # CONFIG
 
-/**
- * SETTINGS
- * Global...............Globally available settings.
- * Colors...............Globally defined colors.
- *
- * TOOLS
- * Mixins...............Global mixins.
- * Breakpoints..........Global breakpoints.
- * Helpers..............Globally available helper classes.
- *
- * GENERIC
- * Normalize.css........Normalize the browser defaults.
- * Reset................Reset some needed styles.
- * Box-sizing...........A better box-model.
- * Fonts................Defining the fonts being used.
- * Icons................Main styling for SVG icons.
- * Selections...........Styles for selecting elements.
- * Print................Resetting the print format.
- *
- * ELEMENTS
- * General..............Common HTML elements.
- * Headings.............H1–H6.
- * Links................Styling all a elements.
- * Code.................Styling all code elements.
- * Lists................Styling of ul and ol.
- * Quotes...............Base styling for quotes.
- * Tables...............Base styling for tables.
- * Forms................Element-level form styling.
- * Figures..............Base styling of figures.
- *
- * OBJECTS
- * Main Layout..........File for main layout handling.
- * Main Content.........Handling content layout.
- *
- * COMPONENTS
- *
- * ...All components listed below...
- *
- * TRUMPS
- * Display..............Helper classes for showing or hiding content.
- * Utilities............Various helper classes.
- * Vendor extensions....Overwrite 3rd party styles
- *
- */
+// SETTINGS
+@import "settings.global";        // Globally available settings.
+@import "settings.colors";        // Globally defined colors.
 
-@import "settings.global";
-@import "settings.colors";
+// TOOLS
+@import "tools.mixins";           // Global mixins
+@import "tools.breakpoints";      // Global breakpoints
+@import "tools.helpers";          // Globally available helper classes
 
-@import "tools.mixins";
-@import "tools.breakpoints";
-@import "tools.helpers";
+// GENERIC (Starts CSS output)
+@import "../../../node_modules/normalize.scss/normalize"; // Normalize the browser defaults
+@import "generic.reset";          // Reset some needed styles
+@import "generic.box-sizing";     // A better box-model
+@import "generic.fonts";          // Defining the fonts being used
+@import "generic.icons";          // Main styling for SVG icons
+@import "generic.selections";     // Styles for selecting elements
+@import "generic.print";          // Resetting the print format
 
-@import "../vendor/normalize-scss/sass/normalize/import-now";
-@import "generic.reset";
-@import "generic.box-sizing";
-@import "generic.fonts";
-@import "generic.icons";
-@import "generic.selections";
-@import "generic.print";
+// ELEMENTS
+@import "elements.general";       // Common HTML elements
+@import "elements.headings";      // H1–H6
+@import "elements.links";         // Styling all a elements
+@import "elements.code";          // Styling all code elements
+@import "elements.lists";         // Styling of ul and ol
+@import "elements.quotes";        // Base styling for quotes
+@import "elements.tables";        // Base styling for tables
+@import "elements.forms";         // Element-level form styling
+@import "elements.figures";       // Base styling of figures
 
-@import "elements.general";
-@import "elements.headings";
-@import "elements.links";
-@import "elements.code";
-@import "elements.lists";
-@import "elements.quotes";
-@import "elements.tables";
-@import "elements.forms";
-@import "elements.figures";
+// OBJECTS
+@import "objects.main-layout";    // File for main layout handling.
+@import "objects.main-content";   // Handling content layout
 
-@import "objects.main-layout";
-@import "objects.main-content";
-
+// COMPONENTS
 @import "components.nav-primary";
 @import "components.site-footer";
 @import "components.site-header";
 
-@import "trumps.display";
-@import "trumps.utilities";
-@import "trumps.vendor-extensions";
+// TRUMPS
+@import "trumps.display";         // Helper classes for showing or hiding content
+@import "trumps.utilities";       // Various helper classes
+@import "trumps.extensions";      // Overwrite 3rd party styles

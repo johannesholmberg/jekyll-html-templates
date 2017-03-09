@@ -1,15 +1,28 @@
 <!doctype html>
-<html>
-  {% include head.html %}
-  <body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="{{ page.description }}">
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>{{ page.title }} | {{ site.name }} </title>
 
-    <div style="height: 0; width: 0; position: absolute; visibility: hidden">
-      {% include icons.svg %}
-    </div>
+  {% include head-favicons.html %}
+  <link href="/assets/css/styles{% if site.environment == 'production' %}.min{% endif %}.css" rel="stylesheet">
 
-    {% include header.html %}
-    <main>{{ content }}</main>
-    {% include footer.html %}
+  <script src="/assets/js/app{% if site.environment == 'production' %}.min{% endif %}.js" async></script>
 
-  </body>
+  <!--[if lt IE 9]>
+    <script src="/assets/vendor/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="/assets/vendor/respond/dest/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div style="height: 0; width: 0; position: absolute; visibility: hidden">
+    {% include icons.svg %}
+  </div>
+
+  {% include header.html %}
+  <main>{{ content }}</main>
+  {% include footer.html %}
+</body>
 </html>
