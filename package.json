@@ -20,5 +20,8 @@
     "gulp-plumber": "^1.1.0",
     "babel-preset-env": "^1.1.8",
     "gulp-babel": "^6.1.2"
+  },
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
   }
 }
